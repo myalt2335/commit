@@ -5,7 +5,7 @@ import time
 import sys
 
 BATCH = 100_000
-GOAL = 5_555_555
+GOAL = 6_666_666
 REPO_URL = "https://github.com/myalt2335/commit.git"
 REPO_DIR = "work"
 CUR_FILE = "curcomit.txt"
@@ -44,7 +44,7 @@ def write_current(val):
         os.fsync(f.fileno())
 
 
-FINAL_README = """# 5,555,555 commits lol
+FINAL_README = """# 6,666,666 commits lol
 
 Please don't hurt me github
 
@@ -88,7 +88,7 @@ def do_batch(total, to_make, final_batch):
 
             run("git add -A", cwd=REPO_DIR)
             run(
-                'git commit -m "5,555,555 - update README, delete commit.py, add spam.py"',
+                'git commit -m "6,666,666. Update README, delete commit.py"',
                 cwd=REPO_DIR,
             )
             new_total += 1
